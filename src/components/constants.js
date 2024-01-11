@@ -1,0 +1,68 @@
+export const initialFilters = {
+  active: false,
+  stopped: false,
+  archived: false,
+  draft: false,
+
+  TYPE_EMAIL: false,
+  TYPE_EMAIL_TRIGGERED: false,
+  TYPE_EMAIL_TRIGGERED_WITH_DELAY: false,
+  TYPE_EMAIL_SCHEDULED: false,
+  TYPE_EMAIL_TRIGGERED_SESSION_END: false,
+  TYPE_EMAIL_TRIGGERED_CLOSED_START_SCREEN: false,
+  TYPE_EMAIL_TRIGGERED_CUSTOM_EVENT: false,
+  TYPE_EMAIL_TRIGGERED_CANCEL_TRAIL: false,
+  TYPE_EMAIL_TRIGGERED_CANCEL_PAID: false,
+  TYPE_IN_APP_RATE_REVIEW: false,
+  TYPE_IN_APP_DEEP_LINK: false,
+  TYPE_IN_APP_SUB_SCREEN: false,
+  TYPE_IN_APP_CUSTOM: false,
+  TYPE_IN_APP_CROSS_PROMO: false,
+  TYPE_IN_APP_INTERS: false,
+  TYPE_IN_APP_MODULE_TRIGGER: false,
+  TYPE_IN_APP_HTML: false,
+  TYPE_IN_APP: false,
+  TYPE_PUSH: false,
+  TYPE_PUSH_SCHEDULED: false,
+  TYPE_PUSH_TRIGGERED_SESSION_END: false,
+  TYPE_PUSH_TRIGGERED_CUSTOM_EVENT: false,
+  TYPE_PUSH_TRIGGERED_CANCEL_TRAIL: false,
+  TYPE_PUSH_TRIGGERED_CANCEL_PAID: false,
+  TYPE_PUSH_TRIGGERED: false,
+  TYPE_PUSH_TRIGGERED_CLOSED_START_SCREEN: false,
+  TYPE_MULTI_CUSTOM: false,
+  TYPE_MULTI: false,
+};
+
+export const CAMPAIGN_TYPE_LABEL = {
+  TYPE_EMAIL: 'Email',
+  TYPE_IN_APP: 'InApp',
+  TYPE_PUSH: 'Push',
+  TYPE_MULTI: 'Multi',
+};
+
+export const campaignType = {
+  inAppCustom: 'TYPE_IN_APP_CUSTOM',
+  inAppHTML: 'TYPE_IN_APP_HTML',
+  inAppRateReview: 'TYPE_IN_APP_RATE_REVIEW',
+  inAppDeeplink: 'TYPE_IN_APP_DEEP_LINK',
+  inAppSubScreen: 'TYPE_IN_APP_SUB_SCREEN',
+  inAppHoustonRedistribute: 'TYPE_IN_APP_MODULE_TRIGGER',
+  inAppInterstitials: 'TYPE_IN_APP_INTERS',
+
+  pushScheduled: 'TYPE_PUSH_SCHEDULED',
+  pushTriggeredCancelTrail: 'TYPE_PUSH_TRIGGERED_CANCEL_TRAIL',
+  pushTriggeredCancelPaid: 'TYPE_PUSH_TRIGGERED_CANCEL_PAID',
+  pushTriggeredSessionEnd: 'TYPE_PUSH_TRIGGERED_SESSION_END',
+
+  pushTriggered: 'TYPE_PUSH_TRIGGERED',
+  pushTriggeredClosedScreen: 'TYPE_PUSH_TRIGGERED_CLOSED_START_SCREEN',
+  multiCustom: 'TYPE_MULTI_CUSTOM',
+  // pushTriggeredCustomEvent: 'TYPE_PUSH_TRIGGERED_CUSTOM_EVENT',
+
+  emailTriggered: 'TYPE_EMAIL_TRIGGERED',
+  emailCancelTrail: 'TYPE_EMAIL_TRIGGERED_CANCEL_TRAIL',
+  emailCancelPaid: 'TYPE_EMAIL_TRIGGERED_CANCEL_PAID',
+  emailTriggeredWithDelay: 'TYPE_EMAIL_TRIGGERED_WITH_DELAY',
+  emailScheduled: 'TYPE_EMAIL_SCHEDULED',
+};

@@ -1,0 +1,46 @@
+{
+  "extends": [
+    "react-app",
+    "airbnb",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended",
+    "plugin:json/recommended"
+  ],
+  "plugins": ["testing-library", "jest-dom"],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/prop-types": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react-hooks/exhaustive-deps": 0,
+    "max-len": [2, { "code": 120}],
+    "camelcase": 0,
+    "react/no-unknown-property": [1, { "ignore": ["class"]  }],
+    "func-style": [2, "expression", { "allowArrowFunctions": true }],
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "return" }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["*Icon.js"],
+      "rules": {
+        "max-len": 0
+      }
+    },
+    {
+      "files": [ "*.test.js" ],
+      "rules": {
+        "no-undef": 0
+      }
+    }
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  },
+  "ignorePatterns": ["*.svg", "Jenkinsfile", "*.test.js.snap"]
+}
